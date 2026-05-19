@@ -4,9 +4,9 @@ import time
 from datetime import datetime
 import lyricsgenius
 import translators as ts
-import tk as TOKEN
+import tk 
 # --- НАСТРОЙКИ СЕКЬЮРНОСТИ ---
-GENIUS_ACCESS_TOKEN = "TOKEN"  # Проверьте, чтобы тут стоял ваш свежий токен
+GENIUS_ACCESS_TOKEN = tk.TOKEN  # Проверьте, чтобы тут стоял ваш свежий токен
 
 BAD_WORDS_PATTERNS = [
     r'хуй', r'хуе', r'хуя', r'пизд', r'еба', r'ебл', r'ебу', r'бля', r'сука', 
@@ -47,8 +47,7 @@ except FileNotFoundError:
 genius = lyricsgenius.Genius(
     GENIUS_ACCESS_TOKEN, 
     remove_section_headers=True, 
-    timeout=15, 
-    skip_non_songs=True
+    timeout=400, 
 )
 
 

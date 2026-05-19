@@ -3,9 +3,11 @@ import time
 import re
 import lyricsgenius
 import translators as ts
-
+import tk 
+# --- НАСТРОЙКИ СЕКЬЮРНОСТИ ---
+GENIUS_ACCESS_TOKEN = tk.TOKEN
 # ВСТАВЬТЕ СЮДА ВАШ СКОПИРОВАННЫЙ ТОКЕН С САЙТА GENIUS
-GENIUS_ACCESS_TOKEN = "3re-3rrTP5lwg-8TL3du0P4aLfV5RKhcCrFWX3pabqsCizsdz2m3EPkzHz2G5OT6"
+# GENIUS_ACCESS_TOKEN = "3re-3rrTP5lwg-8TL3du0P4aLfV5RKhcCrFWX3pabqsCizsdz2m3EPkzHz2G5OT6"
 
 # Расширенный список мата (русский + английский)
 BAD_WORDS_PATTERNS = [
